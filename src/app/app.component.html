@@ -1,0 +1,446 @@
+<!--<input type="" value="Enter the String"[(ngModel)]="uname">
+<p>{{uname}}</p>-->
+<!--<div class="container">
+  <form (ngSubmit)="onSubmit()" #loginForm="ngForm">
+    <div>
+      <label for="email">Email:</label>
+      <input id="email" name="email" [(ngModel)]="email" required type="email" />
+    </div>
+    <div>
+      <label for="password">Password:</label>
+      <input id="password" name="password" [(ngModel)]="password" required type="password" />
+    </div>
+    <button type="submit">Submit</button>
+  </form>
+</div>
+<app-logincomponent></app-logincomponent>
+<h1>{{name}}</h1>
+<div>
+  {{5 * 6}}
+  {{"Welcome" + name}}
+  {{name.length}}
+  {{name.toUpperCase()}}
+  {{myMethond()}}
+</div>
+<div>
+  my app Status is {{appStatus? "pass":"Fail"}}
+</div>
+<div>
+  my app Status1 is {{appStatus ? status1 : status2}}
+</div>
+<div>
+  <input type="text" name="" id="" [value]="name">
+</div>
+<div>
+  <input type="text" name="" id="" value={{name}}>
+</div>
+<div>
+  <input type="text" [disabled]="enable" name="" id="" [value]="name">
+</div>
+<div>
+  <input type="text"  name="" id="" [value]="appStatus ? status1 : status2">
+</div>
+
+<div>
+  <button (click)="onAddcart()">Add to cart</button>
+  <br><br>
+  <p>{{msg}}</p>
+  <input type="text" value="myinputText"(click)="onInputClick($event)">
+</div>-->
+<!--<div>
+  <button value="Laptop"(click)="onAddcart($event)">Laptop</button>
+  <button value="TV">TV</button>
+  <button value="Washing Machine"> washing machine</button>
+  <p>{{msg}}</p>
+</div>-->
+
+<!--<div>
+  <input type="text" value="ram" [(ngModel)]="uname">
+  <p>{{uname}}</p>
+</div>-->
+ 
+  
+  <!--<h2>Small Modal</h2>   
+  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Small Modal</button>   
+  <div class="modal fade" id="myModal" role="dialog">  
+    <div class="modal-dialog modal-sm">  
+      <div class="modal-content">  
+        <div class="modal-header">  
+          <button type="button" class="close" data-dismiss="modal">×</button>  
+          <h4 class="modal-title">Modal Header</h4>  
+        </div>  
+        <div class="modal-body">  
+          <p>This is a small modal.</p>  
+        </div>  
+        <div class="modal-footer">  
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>  
+        </div>  
+      </div>  
+    </div>  
+  </div>  
+</div>-->
+<!--<div class="col-8 mx-auto">
+  <button class="btn btn-primary" data-toggle="modal" data-target="#newModal">Create Project</button>
+</div>
+<form>
+  <div class="modal" role="dialog" id="newModal">
+    <div class="modal-dialog">
+      <div class="modal-content" style="width:700px">
+        <div class="modal-header">
+          <div class="modal-title">New Project</div>
+          <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+        </div>
+        <div class="modal-body"></div>
+        <div class="form-group row">
+          <label for="txtNewProjectID" class="col-sm-4 col-form-label">Project ID</label>
+          <div class="col-sm-8">
+            <input type="number" id="txtNewProjectID" style="width:100px" class="form-control" placeholder="Project ID"
+            name="ProjectID">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="txtNewProjectName" class="col-sm-4 col-form-label">Project Name</label>
+          <div class="col-sm-8">
+            <input type="text" id="txtNewProjectName" class="form-control" placeholder="Project Name"
+            name="ProjectName">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="txtNewDateOfStart" class="col-sm-4 col-form-label">Date of Start</label>
+          <div class="col-sm-8">
+            <input type="date" id="txtNewDateOfStart" style="width:150px" class="form-control"
+            placeholder="Date of Start" name="DateOfStart">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="txtTeamSize" class="col-sm-4 col-form-label">Team Size</label>
+          <div class="col-sm-8">
+            <input type="number" id="txtTeamSize" style="width:150px" class="form-control" placeholder="Team Size"
+            name="TeamSize">
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-warning" data-dismiss="modal">Cancel</button>
+        <button class="btn btn-success" data-dismiss="modal">Save</button>
+      </div>
+    </div>
+  </div>
+</form>-->
+  <!--<div class="col-8 mx-auto">
+    <button class="btn btn-primary" data-toggle="modal"  style="width:165px" data-target="#newModal">Create Project</button>
+  </div>
+
+  <div class="col-8 mx-auto">
+    <table class="table">
+      <thead>
+        <th>Project ID</th>
+        <th>Project Name</th>
+        <th>Date of Start</th>
+        <th>Team Size</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+<form>
+  <div class="modal" role="dialog" id="newModal">
+    <div class="modal-dialog">
+      <div class="modal-content" style="width:700px">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" id="customCloseButton">
+            <span>x</span>
+          </button>
+          <div class="modal-title">New Project</div>
+        </div>
+        <div class="modal-body">
+
+          <div class="form-group row">
+            <label for="txtNewProjectID" class="col-sm-4 col-form-label">Project ID</label>
+            <div class="col-sm-8">
+              <input type="number" id="txtNewProjectID" style="width:100px" class="form-control" placeholder="Project ID"
+                name="ProjectID">
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <label for="txtNewProjectName" class="col-sm-4 col-form-label">Project Name</label>
+            <div class="col-sm-8">
+              <input type="text" id="txtNewProjectName" class="form-control" placeholder="Project Name" style="width:100px"
+                name="ProjectName">
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <label for="txtNewDateOfStart" class="col-sm-4 col-form-label">Date of Start</label>
+            <div class="col-sm-8">
+              <input type="date" id="txtNewDateOfStart" style="width:150px" class="form-control"
+                placeholder="Date of Start" name="DateOfStart">
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <label for="txtTeamSize" class="col-sm-4 col-form-label">Team Size</label>
+            <div class="col-sm-8">
+              <input type="number" id="txtTeamSize" style="width:150px" class="form-control" placeholder="Team Size"
+                name="TeamSize">
+            </div>
+          </div>
+          <div>
+          <button class="btn btn-warning" data-dismiss="modal" style="margin-left:50px; width:150px">Cancel</button>
+        
+          <button class="btn btn-success" data-dismiss="modal" style="margin-left:70px;margin-right:240px;width:150px">Save</button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</form>-->
+
+<!--<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mynav" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Angular Task Manager</a>
+    </div>
+    <div class="collapse navbar-collapse" id="mynav">
+      <ul class="nav navbar-nav">
+        <li><a href="#">Dashboard</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+      <form class="navbar-form navbar-right">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="button" class="btn btn-warning">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>-->
+
+
+<!--<nav class="navbar navbar-expand-sm bg-success navbar-dark">
+  <a class="navbar-brand" href="#">Angular Task Manager</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mynav">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="mynav">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Dashboard</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">About</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="search"><i class="fa fa-search"></i></span>
+        </div>
+        <input type="text" class="form-control" placeholder="Search" />
+      </div>
+      <button class="btn btn-warning my-2 my-sm-0" style="width:150px" type="button">Search</button>
+      <button class="btn btn-warning my-2 my-sm-0" style="width:115px" type="button">Search</button>
+    </form>
+  </div>
+</nav>-->
+<!--<nav class="navbar navbar-expand-sm bg-success navbar-dark">
+  <a class="navbar-brand" href="#">Angular Task Manager</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mynav">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="mynav">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Dashboard</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">About</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="search"><i class="fa fa-search"></i></span>
+        </div>
+        <input type="text" class="form-control" placeholder="Search" />
+      </div>
+      <button class="btn btn-warning my-2 my-sm-0"style="width:150px" type="button">Search</button>
+    </form>
+  </div>
+</nav>
+
+<div class="container-fluid">
+  <h1>Welcome to Angular</h1>
+  <h2>Hello</h2>
+</div>-->
+<!--<button (click)="btnclick()" style="width: 150px;">Save</button>
+
+<h1>Projects</h1>
+<div class="row">
+  <div class="col-8 mx-auto">
+    <table class="table">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Project ID</th>
+          <th>Project Name</th>
+          <th>Date of Start</th>
+          <th>Team Size</th>
+          <th>Action</th> 
+      </thead>
+      <tbody>
+        <tr *ngFor="let post of posts">
+          <td>{{ post.id }}</td>
+          <td>{{ post.projectID }}</td>
+          <td>{{ post.projectName }}</td>
+          <td>{{ post.dateOfStart }}</td>
+          <td>{{ post.teamSize }}</td>
+          <td>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>-->
+
+<!--<ng-container *ngFor="let product of products">
+  product Name:<strong class="text-success">{{product.Name}}</strong> &nbsp;&nbsp;
+  Product Id:<strong class="text-success">{{product.id}}</strong><br>
+</ng-container>-
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Observable</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href='promise'>Promise</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Promise</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Observable</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="container-fluid">
+  <router-outlet></router-outlet>
+</div>-->
+<!--<div class="page-area">
+  <h2>About Us</h2>
+  <input type="text" placeholder="input here.."#val>
+  <button (click)="ran(val)">Submit</button>
+  </div>
+  <app-logincomponent [myValue]="value"></app-logincomponent>-->
+
+
+  <!--<h1>Projects</h1>
+  <div class="row">
+    <div class="col-8 mx-auto">
+      <button class="btn btn-primary" data-toggle="modal" data-target="#newModal">Create Project</button>
+    </div>
+    <div class="col-8 mx-auto">
+      <table class="table">
+        <thead>
+          <th>ID</th>
+          <th>Project ID</th>
+          <th>Project Name</th>
+          <th>Date of Start</th>
+          <th>Team Size</th>
+        </thead>
+        <tbody>
+          <tr *ngFor="let project of projects">
+            <td>{{project.id}}</td>
+            <td>{{project.projectID}}</td>
+            <td>{{project.projectName}}</td>
+            <td>{{project.dateOfStart}}</td>
+            <td>{{project.teamSize}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  
+  
+  <form>
+      <div class="modal" role="dialog" id="newModal">
+        <div class="modal-dialog">
+          <div class="modal-content" style="width:700px">
+            <div class="modal-header">
+              <div class="modal-title">New Project</div>
+              <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+            </div>
+            <div class="modal-body">
+              
+              <div class="form-group row">
+                  <label for="txtNewProjectID" class="col-sm-4 col-form-label">ID</label>
+                  <div class="col-sm-8">
+                    <input type="number" id="txtNewProjectID" style="width:100px" class="form-control" placeholder="ID"
+                      name="ProjectID" [(ngModel)]="newProject.id">
+                  </div>
+                </div>
+  
+              <div class="form-group row">
+                <label for="txtNewProjectID" class="col-sm-4 col-form-label">Project ID</label>
+                <div class="col-sm-8">
+                  <input type="number" id="txtNewProjectID" style="width:100px" class="form-control" placeholder="Project ID"
+                    name="ProjectID" [(ngModel)]="newProject.projectID">
+                </div>
+              </div>
+    
+              <div class="form-group row">
+                <label for="txtNewProjectName" class="col-sm-4 col-form-label">Project Name</label>
+                <div class="col-sm-8">
+                  <input type="text" id="txtNewProjectName" class="form-control" placeholder="Project Name"
+                    name="ProjectName" [(ngModel)]="newProject.projectName">
+                </div>
+              </div>
+    
+              <div class="form-group row">
+                <label for="txtNewDateOfStart" class="col-sm-4 col-form-label">Date of Start</label>
+                <div class="col-sm-8">
+                  <input type="date" id="txtNewDateOfStart" style="width:150px" class="form-control"
+                    placeholder="Date of Start" name="DateOfStart" [(ngModel)]="newProject.dateOfStart">
+                </div>
+              </div>
+    
+              <div class="form-group row">
+                <label for="txtTeamSize" class="col-sm-4 col-form-label">Team Size</label>
+                <div class="col-sm-8">
+                  <input type="number" id="txtTeamSize" style="width:150px" class="form-control" placeholder="Team Size"
+                    name="TeamSize" [(ngModel)]="newProject.teamSize">
+                </div>
+              </div>
+    
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-warning" data-dismiss="modal">Cancel</button>
+              <button class="btn btn-success" data-dismiss="modal" (click)="onSaveClick()">Save</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>-->
+    <input [(ngModel)]="projectID" placeholder="Enter Project ID">
+<h1>{{projectID}}</h1>
+  
